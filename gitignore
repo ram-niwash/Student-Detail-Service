@@ -9,6 +9,7 @@
 
 ### IntelliJ IDEA ###
 .idea
+.idea/
 *.iws
 *.iml
 *.ipr
@@ -34,3 +35,5 @@ target/
 
 ### Gradle ###
 .gradle/
+build
+
