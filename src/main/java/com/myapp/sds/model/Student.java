@@ -11,13 +11,13 @@ public class Student {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     @Column(name="ID")
-    private int studentId;
+    private Long studentId;
 
     @Column(name="NAME")
     private String name;
 
     @Column(name="ROLL_NUMBER")
-    private String rollNumber;
+    private int rollNumber;
 
     @Column(name="COURSE")
     private String course;

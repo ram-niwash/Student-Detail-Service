@@ -9,6 +9,10 @@ spring:
   # Application Configuration
   application:
     name: Student Detail Service
+  security:
+    user:
+      name: hello
+      password: hello
 
   # Data Source and JPA Configuration
   datasource:
@@ -23,3 +27,4 @@ spring:
       hibernate:
         dialect: org.hibernate.dialect.MySQL8Dialect
         format_sql: true
+
