@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>UPDATE | STUDENT</title>
+</head>
+<body>
+    <div align="center">
+        <h1>Update Student</h1>
+        <a href="/ui/home">HOME</a>
+        <hr/>
+        <form th:action="@{/ui/update}" th:object="${student}" method="post">
+            <table style="boarder:solid">
+                <tr>
+                    <td>
+                        <label>Student ID</label>
+                    </td>
+                    <td>
+                        <input type="text" th:field="*{studentId}" placeholder="Enter Student ID"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label>Student Name</label>
+                    </td>
+                    <td>
+                        <input type="text" th:field="*{name}" placeholder="Enter Name"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label>Student Roll Number</label>
+                    </td>
+                    <td>
+                        <input type="text" th:field="*{rollNumber}" placeholder="Enter Roll Number"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label>Student Course</label>
+                    </td>
+                    <td>
+                        <input type="text" th:field="*{course}" placeholder="Enter Course"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label>Student Fee</label>
+                    </td>
+                    <td>
+                        <input type="text" th:field="*{fee}" placeholder="Enter Fee"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>
+                        <input type="submit" value="Submit" />
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </div>
+</body>
+</html>

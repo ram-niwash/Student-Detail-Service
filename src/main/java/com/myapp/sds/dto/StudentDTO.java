@@ -1,6 +1,5 @@
 package com.myapp.sds.dto;
 
-import jakarta.persistence.*;
 import lombok.Data;
 
 
